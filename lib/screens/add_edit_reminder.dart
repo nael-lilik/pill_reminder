@@ -18,7 +18,7 @@ class _AddEditReminderScreenState extends State<AddEditReminderScreen> {
   TextEditingController _titleController = TextEditingController();
   TextEditingController _descriptionController = TextEditingController();
 
-  String _category = 'work';
+  String _category = 'Work';
   DateTime _remindersTime = DateTime.now();
 
   @override

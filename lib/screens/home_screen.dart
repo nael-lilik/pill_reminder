@@ -114,7 +114,16 @@ class HomeScreen extends StatefulWidget {
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(15),
                 ),
-                child: ListTile(),
+                child: ListTile(
+                  title: reminder.containsKey('title') ? Text(reminder['title']) : Text('No Title'),
+                  subtitle: reminder.containsKey('description') ? Text(reminder['description']) : Text('No Description'),
+                  onTap: () => Navigator.push( // <<======= bagian ini untuk event onTap
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => AddEditReminderScreen(reminderId: reminder['id']),
+                    )
+                  ),
+                ),
               )
               );
               },
