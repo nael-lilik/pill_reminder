@@ -227,18 +227,16 @@ class _AddEditReminderScreenState extends State<AddEditReminderScreen> {
       firstDate: DateTime(2000),
       lastDate: DateTime(2100),
     );
-    if (picked != null) {
-      setState(() {
-        _remindersTime = DateTime(
-          picked.year,
-          picked.month,
-          picked.day,
-          _remindersTime.hour,
-          _remindersTime.minute,
-        );
-      });
+    setState(() {
+      _remindersTime = DateTime(
+        picked!.year,
+        picked!.month,
+        picked!.day,
+        _remindersTime.hour,
+        _remindersTime.minute,
+      );
+    });
     }
-  }
 
   Future<void> _selectTime() async {
     TimeOfDay? picked = await showTimePicker(

@@ -1,3 +1,4 @@
 {
-    "cmake.sourceDirectory": "D:/fluter_project/pill_reminder/windows/flutter"
+    "cmake.sourceDirectory": "D:/fluter_project/pill_reminder/windows/flutter",
+    "java.configuration.updateBuildConfiguration": "automatic"
 }

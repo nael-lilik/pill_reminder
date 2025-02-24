@@ -40,6 +40,58 @@ app.*.symbols
 app.*.map.json
 
 # Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+**/android/app/debug
+**/android/app/profile
+**/android/app/release
+
+# Built application files
+*.apk
+*.aab
+*.ipa
+
+# Android folders
+**/android/app/
+**/android/.gradle/
+**/android/app/build/
+**/android/captures/
+**/android/gradlew
+**/android/gradlew.bat
+**/android/gradle-wrapper.jar
+**/android/local.properties
+
+# iOS folders
+**/ios/.generated/
+**/ios/Flutter/.last_build_id
+**/ios/Flutter/App.framework
+**/ios/Flutter/engine/
+**/ios/Flutter/Flutter.podspec
+**/ios/Flutter/Flutter.xcframework
+**/ios/Pods/
+**/ios/Runner/GeneratedPluginRegistrant.*
+
+# Web related
+**/web/main.dart.js
+**/web/main.dart.js.map
+
+# macOS folders
+**/macos/Flutter/ephemeral/
+**/macos/Flutter/Flutter.podspec
+**/macos/Flutter/Flutter.xcframework
+**/macos/Pods/
+**/macos/Runner/GeneratedPluginRegistrant.*
+
+# Windows folders
+**/windows/Flutter/ephemeral/
+**/windows/Flutter/Flutter.podspec
+**/windows/Flutter/Flutter.xcframework
+**/windows/Runner/GeneratedPluginRegistrant.*
+
+# Linux folders
+**/linux/flutter/ephemeral/
+**/linux/runner/GeneratedPluginRegistrant.*
+
+# Dart related
+.dart_tool/
+.packages
+.pub/
+build/

@@ -8,7 +8,8 @@ plugins {
 android {
     namespace = "com.example.pill_reminder"
     compileSdk = flutter.compileSdkVersion
-    ndkVersion = flutter.ndkVersion
+    ndkVersion '28.0.13004108' // Perbarui versi ini
+    // ndkVersion = flutter.ndkVersion
 
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
